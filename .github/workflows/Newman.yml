@@ -27,8 +27,8 @@ jobs:
 
       - name: Run Postman Collection
         run: |
-          newman run https://api.postman.com/collections/23338478-ec65b058-b645-45df-bbba-003d19760957 \
-          -e https://api.postman.com/environments/23338478-2a366c60-06d6-4bda-97ce-b74c07521185 \
+          newman run https://api.postman.com/collections/23338478-ec65b058-b645-45df-bbba-003d19760957?apikey=PMAK-6929812eec1b6d0001a0e1c8-51f87ca407a975a5dfa38bf8230955e3af \
+          -e https://api.postman.com/environments/23338478-2a366c60-06d6-4bda-97ce-b74c07521185?apikey=PMAK-6929812eec1b6d0001a0e1c8-51f87ca407a975a5dfa38bf8230955e3af \
           -r cli,htmlextra \
           --reporter-htmlextra-export test-results/html-report.html \
           --reporter-htmlextra-title "API Test Report"
